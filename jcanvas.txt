@@ -1,0 +1,15 @@
+$("canvas").drawArc({
+  strokeStyle: color,
+  strokeWidth: pixels,
+  x: pixels, y: pixels,
+  radius: pixels,
+  // Optional, if omitted will draw circle
+  start: degrees, end: degrees
+})
+.drawRect({
+  strokeStyle: color,
+  strokeWidth: pixels,
+  x: pixels, y: pixels,
+  width: pixels, height: pixels,
+  fromCenter: boolean
+})

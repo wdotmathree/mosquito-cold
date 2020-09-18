@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Mosquito Madness</title>
+    <meta charset="utf-8" />
+    <meta name="description" content="一個向人們傳授蚊子和瘧疾危險的遊戲">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="icon"
+      href="https://cdn.glitch.com/ea12a708-fe8c-4d9d-b63b-0601e81995c9%2Fmosquito.ico?v=1580099360756"
+    />
+    <style>
+      * {
+        font-family: Comic Sans MS;
+      }
+    </style>
+    <script>
+      function changeLang(selected) {
+        switch (selected) {
+          case "English":
+            location.replace("/en");
+            break;
+          case "Français":
+            location.replace("/fr");
+            break;
+          case "中文 (简体)":
+            location.replace("/zhCn");
+            break;
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <h1>
+      蚊子瘋狂
+    </h1>
+    <p>
+      請注意，這個遊戲裏 "有可能" 有 "一些" bug，比如說：從滿屏推出需要按 "Esc"
+      建兩次... 也還有一些跟那個類似的 bug。盡管這些，希望這個有些不是有太多
+      Bug。玩的開心!
+    </p>
+    <button onclick="location.assign('/game');">去真正遊戲的按鈕</button>
+    <br />
+    <br />
+    <select name="lang">
+      <option>中文 (简体)</option>
+      <option selected>中文 (繁体)</option>
+      <option>English</option>
+      <option>Français</option>
+    </select>
+    <button
+      type="button"
+      onclick="changeLang(document.querySelector('select').value);"
+    >
+      更改
+    </button>
+  </body>
+</html>

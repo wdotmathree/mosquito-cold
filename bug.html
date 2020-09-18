@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Report Bugs</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <script defer>
+      function onSubmit(token) {
+        var text = document.querySelector("textarea");
+        text.value = encodeURIComponent(text.value);
+        document.getElementById("localTime").value =
+          new Date().getTimezoneOffset() / 60;
+        document.querySelector("form").submit();
+      }
+    </script>
+    <link
+      rel="icon"
+      href="https://cdn.glitch.com/ea12a708-fe8c-4d9d-b63b-0601e81995c9%2Fmosquito.ico?v=1580099360756"
+    />
+  </head>
+  <body>
+    <form action="/addBugs" method="post">
+      <textarea
+        rows="15"
+        cols="50"
+        placeholder="Enter your bug report here"
+        name="bug"
+      ></textarea>
+      <br />
+      <button
+        class="g-recaptcha"
+        data-sitekey="6LeduuEUAAAAANxaJ50A6qCrUh7-luUu2FqIxY5q"
+        data-callback="onSubmit"
+      >
+        Submit
+      </button>
+      <input
+        type="text"
+        style="width: 0; height: 0;"
+        name="localTime"
+        id="localTime"
+        disabled
+        readonly
+      />
+    </form>
+  </body>
+</html>

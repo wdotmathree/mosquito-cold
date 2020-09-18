@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Mosquito Madness</title>
+    <meta charset="utf-8" />
+    <meta
+      name="description"
+      content="A game to teach the danger of mosquitoes and Malaria"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="preload"
+      href="game.css"
+      as="style"
+      onload="this.onload=null;this.rel='stylesheet'"
+    />
+    <link rel="stylesheet" href="game.css"/>
+    <link
+      rel="icon"
+      href="https://cdn.glitch.com/ea12a708-fe8c-4d9d-b63b-0601e81995c9%2Fmosquito.ico?v=1580099360756"
+    />
+    <!--     jQuery -->
+    <script
+      async
+      src="https://cdn.glitch.com/ea12a708-fe8c-4d9d-b63b-0601e81995c9%2Fjquery-3.5.1.min.js?v=1594144354402"
+    ></script>
+    <!--     jCanvas -->
+    <script
+      async
+      src="https://cdn.glitch.com/ea12a708-fe8c-4d9d-b63b-0601e81995c9%2Fjcanvas.js?v=1588870914195"
+    ></script>
+    <script defer src="/game.js"></script>
+  </head>
+  <body>
+    <button onclick="fullscreen();" class="fullscreen" id="button">
+      <img
+        src="https://cdn.glitch.com/ea12a708-fe8c-4d9d-b63b-0601e81995c9%2Ffullscreen.png?v=1579919245958"
+        class="fullscreen"
+        id="image"
+      />
+    </button>
+    <div class="loading" id="loading">
+      <div class="loading" id="loadingBackground"></div>
+      <div class="loading" id="loadingForeground">
+        <p class="loading" id="text">Loading</p>
+        <img
+          src="https://cdn.glitch.com/ea12a708-fe8c-4d9d-b63b-0601e81995c9%2Fpig%20piskel%20complete%20actually%20but%20other%20side.gif"
+          class="loading"
+          id="gif"
+        />
+      </div>
+    </div>
+    <div id="game" class="game">
+      <canvas id="sky" class="game" width="800" height="450"></canvas>
+      <canvas id="back" class="game" width="800" height="450"></canvas>
+      <canvas id="special" class="game" width="800" height="450"></canvas>
+      <canvas id="normal" class="game" width="800" height="450"></canvas>
+      <canvas id="fore" class="game" width="800" height="450"></canvas>
+    </div>
+    <img
+      src="https://cdn.glitch.com/ea12a708-fe8c-4d9d-b63b-0601e81995c9%2Fpig%20piskel%20frame%201.png?v=1580918544202"
+      class="src"
+      id="one"
+    />
+    <img
+      src="https://cdn.glitch.com/ea12a708-fe8c-4d9d-b63b-0601e81995c9%2Fpig%20piskel%20complete%20actually%20yes-2.png%20(2).png?v=1581522524650"
+      class="src"
+      id="two"
+    />
+    <img
+      src="https://cdn.glitch.com/ea12a708-fe8c-4d9d-b63b-0601e81995c9%2Fpig%20piskel%20complete%20actually%20yes-4.png%20(1).png?v=1581522521528"
+      class="src"
+      id="three"
+    />
+    <img
+      src="https://cdn.glitch.com/ea12a708-fe8c-4d9d-b63b-0601e81995c9%2Fpig%20piskel%20complete%20actually%20but%20other%20side-1.png.png?v=1582559291521"
+      class="src"
+      id="four"
+    />
+    <img
+      src="https://cdn.glitch.com/ea12a708-fe8c-4d9d-b63b-0601e81995c9%2Fpig%20piskel%20complete%20actually%20but%20other%20side-2.png.png?v=1582559422669"
+      class="src"
+      id="five"
+    />
+    <img
+      src="https://cdn.glitch.com/ea12a708-fe8c-4d9d-b63b-0601e81995c9%2Fpig%20piskel%20complete%20actually%20but%20other%20side-4.png.png?v=1582559590091"
+      class="src"
+      id="six"
+    />
+    <button type="button" onclick="location.replace('/instructions')">
+      Help!
+    </button>
+    <button type="button" onclick="window.open('/bug')">
+      Submit a Bug Report
+    </button>
+  </body>
+</html>
