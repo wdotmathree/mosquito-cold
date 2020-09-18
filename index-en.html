@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Mosquito Madness</title>
+    <meta charset="utf-8" />
+    <meta name="description" content="A game to teach the danger of mosquitoes and Malaria" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="icon"
+      href="https://cdn.glitch.com/ea12a708-fe8c-4d9d-b63b-0601e81995c9%2Fmosquito.ico?v=1580099360756"
+    />
+    <style>
+      * {
+        font-family: Comic Sans MS;
+      }
+    </style>
+    <script>
+      function changeLang(selected) {
+        switch (selected) {
+          case "Français":
+            location.replace("/fr");
+            break;
+          case "中文 (简体)":
+            location.replace("/zhCn");
+            break;
+          case "中文 (繁体)":
+            location.replace("/zh");
+            break;
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <h1>
+      Mosquito Madness
+    </h1>
+    <p>
+      Keep in mind that there "may" be a "few" bugs in the code, such as exiting
+      from full screen requiring you to click escape 2 times... And
+      other bugs like this; Despite this, hopefully the game isn't bugged to the
+      point where it's unplayable. Have fun!
+    </p>
+    <button onclick="location.assign('game');">
+      Button to go to actual game
+    </button>
+    <br />
+    <br />
+    <select name="lang">
+      <option>中文 (简体)</option>
+      <option>中文 (繁体)</option>
+      <option selected>English</option>
+      <option>Français</option>
+    </select>
+    <button
+      type="button"
+      onclick="changeLang(document.querySelector('select').value);"
+    >
+      Change
+    </button>
+  </body>
+</html>

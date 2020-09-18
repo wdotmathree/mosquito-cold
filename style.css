@@ -1,0 +1,106 @@
+* {
+  margin: 0;
+  padding: 0;
+  z-index: 0;
+}
+
+.loading {
+  position: absolute;
+  z-index: 6;
+}
+
+#loadingBackground {
+  width: 100vw;
+  height: 100vh;
+  opacity: 0.6;
+  background-color: black;
+}
+
+#loadingForeground {
+  position: absolute;
+  left: 35vw;
+  top: 30vh;
+  width: 30vw;
+  height: 40vh;
+  text-align: center;
+  background-color: white;
+}
+
+#gif {
+  position: absolute;
+  width: 45vh;
+  height: 45vh;
+}
+
+#sky {
+  background-color: lightskyblue;
+  position: absolute;
+  z-index: 1;
+}
+
+#back {
+  position: absolute;
+  z-index: 2;
+}
+
+#special {
+  position: absolute;
+  z-index: 3;
+}
+
+#normal {
+  position: absolute;
+  z-index: 4;
+}
+
+#fore {
+  position: absolute;
+  z-index: 5;
+}
+
+.game {
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  left: -2px;
+  top: -2px;
+  border: 2px solid black;
+}
+
+.fullscreen {
+  width: 32px;
+  height: 32px;
+  position: fixed;
+  left: 10px;
+  top: 10px;
+}
+
+#image {
+  position: relative;
+  left: -2px;
+  top: -2px;
+}
+
+#button {
+  position: fixed;
+  left: ;
+}
+
+#game {
+  position: absolute;
+  left: 10vw;
+  top: 40px;
+}
+
+.src {
+  width: 0;
+  height: 0;
+}
+
+#walkRight {
+  width: 300px;
+  height: 252px;
+  position: relative;
+  left: 50vw;
+  top: 50vh;
+}

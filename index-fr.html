@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Mosquito Madness</title>
+    <meta charset="utf-8" />
+    <meta name="description" content="Un jeu pour enseigner le danger des moustiques et du paludisme" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="icon"
+      href="https://cdn.glitch.com/ea12a708-fe8c-4d9d-b63b-0601e81995c9%2Fmosquito.ico?v=1580099360756"
+    />
+    <style>
+      * {
+        font-family: Comic Sans MS;
+      }
+    </style>
+    <script>
+      function changeLang(selected) {
+        switch (selected) {
+          case "English":
+            location.replace("/en");
+            break;
+          case "中文 (简体)":
+            location.replace("/zhCn");
+            break;
+          case "中文 (繁体)":
+            location.replace("/zh");
+            break;
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <h1>
+      Folie des Moustiques
+    </h1>
+    <p>
+      Gardez à l'esprit qu'il "peut" y avoir "quelques" bugs dans le code. Par
+      exemple, sortir du plein écran vous obligeant à pousser "esc" deux fois;
+      Et les autres bugs comme ça; Malgre ça, j'éspere que le jeu n'est pas
+      bugged au point qu'il est injouable. Amusez vous!
+    </p>
+    <button onclick="location.assign('/game');">Le boutton à aller au jeu réel</button>
+    <br />
+    <br />
+    <select name="lang">
+      <option>中文 (简体)</option>
+      <option>中文 (繁体)</option>
+      <option>English</option>
+      <option selected>Français</option>
+    </select>
+    <button
+      type="button"
+      onclick="changeLang(document.querySelector('select').value);"
+    >
+      Changement
+    </button>
+  </body>
+</html>

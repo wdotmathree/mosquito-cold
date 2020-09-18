@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Mosquito Madness</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="icon"
+      href="https://cdn.glitch.com/ea12a708-fe8c-4d9d-b63b-0601e81995c9%2Fmosquito.ico?v=1580099360756"
+    />
+    <link rel="stylesheet" href="/login/style" />
+  </head>
+  <body onkeydown="if(event.code == 'Enter'){document.querySelector('form').submit();}">
+    <h2>
+      Enter admin username and password
+    </h2>
+
+    <form action="/login" method="post">
+      Username: <input name="username" type="text" />
+      <br />
+      Password: <input id="password" name="password" type="password" />
+      <input
+        id="show"
+        type="button"
+        onclick="
+          var password = document.getElementById('password');
+          if (password.type == 'password') {
+            password.type = 'text';
+          } else {
+            password.type = 'password';
+          }"
+      />
+      <br />
+      <input type="submit" value="Submit" />
+    </form>
+  </body>
+</html>

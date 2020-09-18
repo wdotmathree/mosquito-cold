@@ -1,0 +1,17 @@
+{
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "lowdb": "^1.0.0",
+    "https": "^1.0.0",
+    "axios": "^0.19.2",
+    "compression": "^1.7.4",
+    "nedb": "^1.8.0"
+  },
+  "engines": {
+    "node": "10.x"
+  }
+}
